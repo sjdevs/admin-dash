@@ -1,2 +1,2 @@
-# admin-dash
-A simple admin dashboard project
+# Admin Dashboard
+A simple admin dashboard project made for a tutorial.
