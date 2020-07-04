@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f1f4f6;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-block-start: 0;
+    margin-inline-end: 0;
+}
+
+.navbar{
+    background-color: #fafbfc;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+
+    .logo-div{
+        width: 320px;
+        height: auto;
+        display: flex;
+
+        .logo{
+            margin: 16px 30px;
+            background-image: url(../assets/logos/logo-inverse.png);
+            width: 120px;
+            height: 28px;
+            background-size: cover;
+        }
+
+        .hamburger{
+            position: relative;
+            margin: 28px 60px;
+            height: 30px;
+            width: 30px;
+
+            div{
+               position: absolute;
+               height: 2px;
+               background-color: black;
+               width: 30px; 
+               transition: 0.6s ease;
+            }
+
+            div:nth-child(1){
+                top: -7.5px;
+            }
+
+            div:nth-child(2){
+                top: 0;
+            }
+
+            div:nth-child(3){
+                top: 7.5px;
+            }
+        }
+
+        .hamburger-1{
+            position: relative;
+            margin: 28px 60px;
+            
+            div{
+                position: absolute;
+                height: 2px;
+                background-color: black;
+                width: 30px; 
+                transition: 0.6s ease;
+             }
+
+            div:nth-child(1){
+                transform: rotateZ(45deg);
+                top: 0px;
+            }
+            div:nth-child(2){
+                transform: translateX(-40px);
+                opacity: 0;
+            }
+            div:nth-child(3){
+                transform: rotateZ(-45deg);
+                top: 0px;
+            }
+        }
+    }
+
+    .user-widgets{
+        width: 85%;
+        height: auto;
+    }
+}
+
+.content{
+    margin-top: 60px;
+    display: flex;
+    
+    .sidebar{
+        position: fixed;
+        width: 260px;
+        height: 100vh;
+        background-color: #fff;
+        transition: 0.6s ease;
+        box-shadow: 7px 0 60px rgba(0,0,0,0.05);
+        padding: 30px 20px;
+    }
+
+    .main-content{
+        color: #222;
+        width: 100%;
+        transition: 0.6s ease;
+        margin-top: 30px;
+        margin-left: 320px;
+        margin-right: 20px;
+    }
+}
+
+ul li{
+    list-style: none;
+}
+
+.profile-area{
+    margin-top: 10px !important;
+    float: right;
+    margin: 0 100px;
+
+    .profile{
+        background-image: url(../assets/placeholders/human_avatar.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-right: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .position{
+        margin-top: -10px;
+        font-size: 12px;
+    }
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.list-groups{
+    span{
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: #3E69D5;
+    }
+}
+
+.link-lists{
+    margin-left: -20px;
+
+    li{
+        font-size: 16px;
+        color: #6F7377;
+        margin: 10px 4px;
+        border-radius: 4px;
+        padding: 8px 10px;
+        transition: 0.18s ease-in;
+
+        &:hover{
+            color: #3F6AD8;
+            background-color: #E0F3FF;
+
+            i{
+                color: #3F6AD8;
+            }
+        }
+
+        i{
+            transition: 0.18s ease-in;
+            color: #CFD1D2;
+            font-size: 21px;
+            margin-right: 6px;
+        }
+    }
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+    .card{
+        box-shadow: 0 0.46875rem 2.1875rem rgba(4,9,20,0.03), 0 0.9375rem 1.40625rem rgba(4,9,20,0.03), 0 0.25rem 0.53125rem rgba(4,9,20,0.05), 0 0.125rem 0.1875rem rgba(4,9,20,0.03);
+        margin: 0px 15px;
+        width: 50%;
+        padding: 5px 20px;
+        background-color: white;
+    }
+}
